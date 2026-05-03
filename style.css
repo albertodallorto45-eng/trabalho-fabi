@@ -1,0 +1,113 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.custom-navbar {
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    padding: 1.5rem 0;
+}
+
+.custom-navbar.scrolled {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin-left: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0d6efd !important;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    opacity: 0.05;
+}
+
+.custom-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
+}
+
+.custom-img {
+    transition: transform 0.4s ease;
+}
+
+.custom-img:hover {
+    transform: scale(1.02);
+}
+
+.badge {
+    font-size: 0.9rem;
+    border-radius: 50%;
+}
+
+.tech-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        background-color: rgba(15, 23, 42, 0.98) !important;
+        padding: 1rem 0;
+    }
+    
+    .nav-link {
+        margin-left: 0;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-section h1, .hero-section p, .hero-section a {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.hero-section p {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.hero-section a {
+    animation-delay: 0.4s;
+    opacity: 0;
+}

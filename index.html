@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Trabalho 1º Período</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfólio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Olá, eu sou um <span class="text-primary">Estudante de TI</span></h1>
+            <p class="lead mb-4">Este é o meu primeiro projeto acadêmico focado em desenvolvimento web responsivo com Bootstrap e CSS personalizado.</p>
+            <a href="#sobre" class="btn btn-primary btn-lg rounded-pill px-5 py-3 custom-btn">Conheça meu trabalho</a>
+        </div>
+    </header>
+
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Setup de Programação" class="img-fluid rounded-4 shadow-lg custom-img">
+                </div>
+                <div class="col-lg-6 px-lg-5">
+                    <h2 class="fw-bold mb-4">Sobre o Projeto</h2>
+                    <p class="text-muted mb-4">Este site foi desenvolvido como parte de uma entrega para a faculdade. O principal objetivo é demonstrar a capacidade de criar interfaces estruturadas, bonitas e que se adaptam a qualquer tamanho de tela (Responsividade).</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center"><span class="badge bg-primary me-2 p-2">✓</span> Estrutura semântica do HTML5</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="badge bg-primary me-2 p-2">✓</span> Sistema de Grid do Bootstrap 5</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="badge bg-primary me-2 p-2">✓</span> Estilização em CSS Vanilla (Custom)</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="badge bg-primary me-2 p-2">✓</span> Mobile-first e responsividade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tecnologias Utilizadas</h2>
+                <p class="text-muted">Ferramentas aplicadas na construção deste site</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 tech-card">
+                        <div class="card-body text-center p-4">
+                            <h3 class="fw-bold text-primary mb-3">HTML5</h3>
+                            <p class="text-muted mb-0">Estruturação de todas as páginas garantindo semântica, SEO e acessibilidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 tech-card">
+                        <div class="card-body text-center p-4">
+                            <h3 class="fw-bold text-info mb-3">CSS3</h3>
+                            <p class="text-muted mb-0">Criação de estilos únicos, tipografia moderna e micro-interações para os usuários.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 tech-card">
+                        <div class="card-body text-center p-4">
+                            <h3 class="fw-bold text-purple mb-3" style="color: #6f42c1;">Bootstrap</h3>
+                            <p class="text-muted mb-0">Uso do framework para acelerar a criação do layout com grid system e componentes responsivos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 bg-dark text-white text-center">
+        <div class="container py-5">
+            <h2 class="fw-bold mb-4">Pronto para a Avaliação</h2>
+            <p class="lead mb-4 text-light opacity-75">O projeto já se encontra versionado e publicado no GitHub.</p>
+            <a href="https://github.com/SEU-USUARIO" target="_blank" class="btn btn-outline-light btn-lg rounded-pill px-4 me-2">Ver meu GitHub</a>
+        </div>
+    </section>
+
+    <footer class="bg-black text-center py-4 text-white-50">
+        <div class="container">
+            <small>&copy; 2024 Projeto Faculdade. Desenvolvido para a disciplina de Web.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
